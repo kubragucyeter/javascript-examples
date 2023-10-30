@@ -12,9 +12,13 @@
     integrity="sha512-KulI0psuJQK8UMpOeiMLDXJtGOZEBm8RZNTyBBHIWqoXoPMFcw+L5AEo0YMpsW8BfiuWrdD1rH6GWGgQBF59Lg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-
-  <title>Hello, world!</title>
+    <style>
+        .fa {
+          cursor: pointer;
+        }
+    </style>
+  
+  <title>Slider</title>
 
 </head>
 
@@ -22,25 +26,21 @@
 
   <div class="container mt-2"> 
     <div class="row">
-      <div class="mySlides col-md-6  rounded">
+      <div class="mySlides col-md-6">
 
         <div class="card">
-          <div id="slideshow">
-          <img class="card-img-top" src="img/yamahaR25.jpg" alt="Resim 1">
-          <img class="card-img-top" src="img/hondacbr.webp"alt="Resim 2">
-          <img class="card-img-top" src="img/kwasakih2r.jpeg"alt="Resim 3">
-        </div>
-        
+          <img class="card-img-top" src="img/Yamaha-MT10.jpg" alt="Resim 1">
+    
           <div class="card-body">
-            <h5 class="card-title">Yamaha R25</h5>
+            <h5 class="card-title">Yamaha MT10</h5>
             <p class="card-text"></p>
-              <button class="p-1 bg-primary border border-0 rounded"> <a class="card-link text-white" href="#">Read
-                  More</a> </button>
+             <a class="card-link" href="#">Read More</a> 
             </div>
-            <div style="display: flex; flex-direction: row; margin: 10px;">
-              <button class="transition btn btn-primary"style="width: 30px; height: 30px; margin-right: 20px; display: flex; justify-content: center;"><i class="fa fa-arrow-left"></i></button>
+            <div class="card-footer">
+              <i class="fa fa-arrow-left fa-2x arrow"></i>
+              <i class="fa fa-arrow-right fa-2x arrow"></i>
             </div>
-            <button class="transition btn btn-primary"style="width: 30px; height: 30px; display: flex; justify-content: center;"><i class="fa fa-arrow-right"></i></button>
+
           </div>
         </div>
       </div>
