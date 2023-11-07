@@ -6,6 +6,7 @@ const items = document.querySelectorAll('.item');
 const message = document.getElementById('message');
 const PlayAgainBtn = document.getElementById('play-again');
 
+
 const correctLetters = [];
 const wrongLetters = [];
 let selectedWord = getRandomWord();
@@ -13,7 +14,7 @@ let selectedWord = getRandomWord();
 
 
 function getRandomWord() {
-    const words = ["javascrıpt", "java", "python", "html", "css"];
+    const words = ["html", "javascript", "css", "python", "sql"]; // Kelimeler değiştirilebilir 
     return words[Math.floor(Math.random() * words.length)];
 }
 
@@ -69,15 +70,32 @@ function displayMessage() {
 }
 
 PlayAgainBtn.addEventListener('click', function(){
-    correctLetters.splice(0);
-    wrongLetters.splice(0);
+    
+   
+     correctLetters.splice(0);
+     wrongLetters.splice(0);
 
-    selectedWord = getRandomWord(); 
+    
+
+    selectedWord = getRandomWord();
     displayWord();
     updateWrongLetters();
 
     popup.style.display ='none';
 }); 
+
+PlayAgainBtn.addEventListener('click', function(){
+   
+    correctLetters.splice(0);
+    wrongLetters.splice(0);
+
+    selectedWord = getRandomWord();
+    displayWord();
+    updateWrongLetters();
+
+    popup.style.display ='none';
+});
+
 
 window.addEventListener('keydown', function (e) {
     if (e.keyCode >= 65 && e.keyCode <= 90) {

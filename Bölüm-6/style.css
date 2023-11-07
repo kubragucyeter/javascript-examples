@@ -98,3 +98,8 @@ body {
 #message.show {
     transform: translateY(-80px);
 }
+
+.clue {
+    font-size: 20px;
+    
+}

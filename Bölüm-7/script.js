@@ -122,13 +122,29 @@ function timer () {
 
 
 
-const test1 = 5;
-const test2 = 5;
-test1==test2
+// const test1 = [5];//FF00-FFFF
+// const test5=test1;
+// const test2 = [5];
 
-const deneme1 = new UI();
-const deneme2 = new UI();
-deneme1==deneme2;
-new UI().btn_next="kübra";
-new UI().btn_next="kübraa";
+// const test3=5;
+// const test4=5;
+// test5.push(3)
+// FF00-FFFF==FF00-FFFF;
+
+
+// test1==test2;
+// FF00-FFFF==FE00-FEFF
+
+// 5==5;
+// 's'=='s';
+// debugger;
+// console.log(test1==test2)
+
+
+// const deneme1 = new UI(); //0400-04FF
+// const deneme2 = new UI(); //0100-01ff
+
+// 0400-04FF==0100-01FF;
+// 0400-04FF.btn_next="kübra";
+// 0100-01FF.btn_next="kübraa";
 

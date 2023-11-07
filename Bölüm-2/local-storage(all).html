@@ -154,9 +154,7 @@
 
         document.querySelector("#btnAddNewTask").addEventListener("click", newTask);
         document.querySelector("#btnAddNewTask").addEventListener("keypress", function () {
-            if (event.key == "Enter") {
-                document.getElementById("#btnAddNewTask").click();
-            }
+            e.preventDefault();
         });
 
         for(let span of filters) {
