@@ -14,7 +14,7 @@ let selectedWord = getRandomWord();
 
 
 function getRandomWord() {
-    const words = ["html", "javascript", "css", "python", "sql"]; // Kelimeler değiştirilebilir 
+    const words = ["html", "javascrıpt", "css", "python", "sql"]; // Kelimeler değiştirilebilir 
     return words[Math.floor(Math.random() * words.length)];
 }
 
@@ -94,6 +94,7 @@ PlayAgainBtn.addEventListener('click', function(){
     updateWrongLetters();
 
     popup.style.display ='none';
+
 });
 
 
