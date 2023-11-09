@@ -39,7 +39,7 @@
         }
     </style>
 
-    <title>Document</title>
+    <title>Note</title>
 </head>
 
 <body>
@@ -48,14 +48,14 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        Yapılacaklar Listesi
+                        To do list
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="input-group">
                                 <input type="text" id="txtTaskName" class="form-control">
                                 <button type="submit" class="btn btn-primary" id="btnAddNewTask">
-                                    Ekle
+                                    Add
                                 </button>
                             </div>
                         </form>
@@ -65,11 +65,11 @@
                 <div class="card mt-3">
                     <div class="card-header controls">
                         <div class="filters">
-                            <span class="active" id="all">Hepsi</span>
-                            <span id="pending">Yapılacaklar</span>
-                            <span id="completed">Yapılanlar</span>
+                            <span class="active" id="all">All</span>
+                            <span id="pending">to do</span>
+                            <span id="completed">done</span>
                         </div>
-                        <button id="btnClear" class="btn btn-danger btn-sm float-end">Temizle</button>
+                        <button id="btnClear" class="btn btn-danger btn-sm float-end">Clean</button>
                     </div>
                     <ul id="task-list" class="list-group list-group-flush">
 
@@ -114,7 +114,7 @@
             ul.innerHTML = "";
 
             if (gorevListesi.length == 0) {
-                ul.innerHTML = "<p class='p-3 m-0'>Görev listeniz boş. </p>"
+                ul.innerHTML = "<p class='p-3 m-0'>Your task list is empty. </p>"
             } else {
 
                 for (let gorev of gorevListesi) {
@@ -134,8 +134,8 @@
                                 <i class="fa-solid fa-ellipsis"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a onclick="deleteTask(${gorev.id})" class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-trash"></i> Sil</a></li>
-                              <li><a onclick='editTask(${gorev.id}, "${gorev.gorevAdi}")' class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-pen"></i> Düzenle</a></li>
+                              <li><a onclick="deleteTask(${gorev.id})" class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-trash"></i> Delete</a></li>
+                              <li><a onclick='editTask(${gorev.id}, "${gorev.gorevAdi}")' class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-pen"></i> Edit</a></li>
                               
                             </ul>
                           </div>
@@ -172,7 +172,7 @@
         function newTask(event) {
 
             if (taskInput.value == "") {
-                alert("Ekle kısmı boş bırakılamaz!");
+                alert("Add section cannot be left blank!");
             } else {
 
                 if (!isEditTask) {
